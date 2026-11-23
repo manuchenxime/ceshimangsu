@@ -1,0 +1,81 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1cbdcd1fb82d91057df2c846aabba740",
+    "packages": [
+        {
+            "name": "shankscode/haki",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Joaocstt/haki.git",
+                "reference": "76985ece701a55f0a8d124d0994d76f8c0a6a329"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Joaocstt/haki/zipball/76985ece701a55f0a8d124d0994d76f8c0a6a329",
+                "reference": "76985ece701a55f0a8d124d0994d76f8c0a6a329",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "suggest": {
+                "ext-pdo": "Necessária apenas se você usar o EloPHP (ORM opcional)",
+                "ext-pdo_mysql": "Necessária para o armazenamento MySQL de tokens e para o EloPHP com MySQL",
+                "ext-pdo_sqlite": "Necessária para o armazenamento SQLite de tokens da autenticação JWT"
+            },
+            "bin": [
+                "bin/haki",
+                "bin/elo"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Elo\\": "src/Elo/",
+                    "Haki\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Miniframework PHP simples para APIs REST, com rotas, injeção de dependências, middleware e autenticação JWT própria.",
+            "keywords": [
+                "api",
+                "dump",
+                "framework",
+                "jwt",
+                "microframework",
+                "rest",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/Joaocstt/haki/issues",
+                "source": "https://github.com/Joaocstt/haki/tree/v2.0.0"
+            },
+            "time": "2026-11-15T20:50:53+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}

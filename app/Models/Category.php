@@ -1,21 +1,14 @@
 <?php
 
-namespace app\Models;
+namespace App\Models;
 
-final class Category
+use Elo\Modelo;
+
+class Usuario extends Modelo
 {
-    public function __construct(
-        public readonly int    $id,
-        public readonly string $nome,
-        public readonly string $descricao,
-        public readonly int    $carga_horaria,
-        public readonly string $categoria_id,
-        public readonly int    $criadoEm,
-    )
-    {
-    }
     protected array $temUm = [
         'courses' => Course::class,
     ];
 
 }
+

@@ -7,7 +7,7 @@ namespace App\Requests;
 use Haki\Validation\FormRequest;
 use Haki\Validation\Rule;
 
-final class CriarClienteRequest extends FormRequest
+final class CriarCategoryRequest extends FormRequest
 {
     public function rules(Rule $rule): array
     {

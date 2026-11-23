@@ -7,7 +7,7 @@ use Elo\Modelo;
 class Course extends Modelo
 {
     protected array $pertenceAMuitos = [
-        'category' => Category::class,
+        'categorias' => Category::class,
     ];
 }
 

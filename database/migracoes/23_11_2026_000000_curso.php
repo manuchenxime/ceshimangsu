@@ -8,7 +8,7 @@ use Elo\Tabela;
 return new class extends Migracao {
     public function subir(): void
     {
-        Tabela::criar('Curso', [
+        Tabela::criar('cursos', [
             'id' => Coluna::inteiro()->unico(),
             'titulo' => Coluna::texto(150),
             'descricao' => Coluna::texto(255),
@@ -16,13 +16,12 @@ return new class extends Migracao {
             'nivel' => Coluna::texto(50),
             'categoria' => Coluna::texto(50),
             'criadoEm' => Coluna::dataHora(50),
-            'setor_id' => Coluna::pertenceA('setores')->aoExcluir('SET NULL')->nulo(),
         ], ['exclusao_logica' => true]);
     }
 
     public function descer(): void
     {
-        Tabela::apagar('Curso');
+        Tabela::apagar('cursos');
     }
 
 

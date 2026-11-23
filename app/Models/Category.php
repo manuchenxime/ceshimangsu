@@ -2,7 +2,7 @@
 
 namespace app\Models;
 
-final class Course
+final class Category
 {
     public function __construct(
         public readonly int    $id,
